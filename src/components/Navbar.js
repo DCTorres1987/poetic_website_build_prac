@@ -1,7 +1,8 @@
 import React from 'react';
 
-// import { 
-// } from '../styled/navbarStyled'
+import { 
+    NavBarSection
+} from '../styled/navbarStyled'
 
 const Navbar = () => {
 
@@ -9,7 +10,7 @@ const Navbar = () => {
 
     return (
 
-         <section className="nav-bar-section">
+         <NavBarSection>
             <img src='./images/poetic-logo.PNG' alt='poetic-logo'/>
             <ul>
             {links.map((value, idx) => (
@@ -17,7 +18,7 @@ const Navbar = () => {
 
             ))}
             </ul>
-         </section>
+         </NavBarSection>
 
     )
 
