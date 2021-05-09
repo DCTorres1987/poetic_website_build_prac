@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { 
-    NavBarSection
+    NavBarSection,
+    NavBarImg
 } from '../styled/navbarStyled'
 
 const Navbar = () => {
@@ -11,7 +12,9 @@ const Navbar = () => {
     return (
 
          <NavBarSection>
-            <img src='./images/poetic-logo.PNG' alt='poetic-logo'/>
+            <NavBarImg 
+                src='./images/poetic-logo.PNG' 
+                alt='poetic-logo'/>
             <ul>
             {links.map((value, idx) => (
                 <navbar key={Math.random().toString(36).substr(2, 9)}>{value}</navbar>
