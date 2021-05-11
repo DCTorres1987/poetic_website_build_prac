@@ -2,7 +2,9 @@ import React from 'react';
 
 import { 
     NavBarSection,
-    NavBarImg
+    NavBarImg,
+    NavBarLink,
+    NavBarMenu
 } from '../styled/navbarStyled'
 
 const Navbar = () => {
@@ -17,7 +19,10 @@ const Navbar = () => {
                 alt='poetic-logo'/>
             <ul>
             {links.map((value, idx) => (
-                <navbar key={Math.random().toString(36).substr(2, 9)}>{value}</navbar>
+                <NavBarMenu key={Math.random().toString(36).substr(2, 9)}>
+                
+                <NavBarLink href={'https://poetic.io/' + value} class='nav-link w-nav-link'>{value}</NavBarLink>
+                </NavBarMenu>
 
             ))}
             </ul>
