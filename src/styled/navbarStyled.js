@@ -9,6 +9,13 @@ export const NavBarSection = styled.section `
     background-color: #171717;
 `;
 
+export const NavBarContainer = styled.div `
+    width: 90%;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+`;
+
 export const NavBarImg = styled.img `
     float: left;
     position: relative;    
